@@ -6,7 +6,7 @@ from PIL import Image
 import tensorflow as tf
 
 # Google Drive link for the model (Change this to your actual model ID)
-MODEL_URL = "MODEL_URL = https://drive.google.com/uc?export=download&id=1A3UQqjIwNr_qDD0PymIPNBtSI0hySF26"
+MODEL_URL = "https://drive.google.com/uc?export=download&id=1A3UQqjIwNr_qDD0PymIPNBtSI0hySF26"
 MODEL_PATH = "deepfake_classifier.tflite"
 
 # Function to download the model
