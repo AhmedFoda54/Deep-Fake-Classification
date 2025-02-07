@@ -1,3 +1,5 @@
-.keras_model_app.py
-.deepfake_classifier.tflite
-.deepfake_classifier_inceptionresnet.keras
+# unneccary file 
+keras_model_app.py
+# Ignore model files
+*.keras
+*.tflite
