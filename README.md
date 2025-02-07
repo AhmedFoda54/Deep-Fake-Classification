@@ -53,6 +53,7 @@ streamlit run tflite_model_app.py
 ```
 deepfake-classifier/
 |-- tflite_model_app.py                      # Main Streamlit application file
+|-- tflite_model.py                      # To convert the .h5/keras model to .tflite model
 |-- deepfake_classifier.tflite  # TensorFlow Lite model file (downloaded automatically)
 |-- requirements.txt            # List of required Python packages
 |-- README.md                   # Project documentation
