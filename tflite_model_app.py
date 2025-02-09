@@ -9,7 +9,7 @@ import tensorflow as tf
 MODEL_URL = "https://www.dropbox.com/scl/fi/sssonhyqh8ocjzi6hysca/deepfake_classifier.tflite?rlkey=3wzqsgcd37ktx0u9kf3p1o75x&st=gkcr1gfr&dl=1"
 MODEL_PATH = "deepfake_classifier.tflite"
 
-# Function to download the model
+# Function to download the model if it's not downloaded priviously
 def download_model():
     if not os.path.exists(MODEL_PATH):
         st.write("Downloading model... Please wait ⏳")
