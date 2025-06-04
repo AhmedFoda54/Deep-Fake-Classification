@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from app.model_utils import download_model, load_model, preprocess_image, predict
+from model_utils import download_model, load_model, preprocess_image, predict
 
 st.title("Deep Fake Image Classifier 🕵️‍♂️")
 
