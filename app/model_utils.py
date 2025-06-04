@@ -29,7 +29,8 @@ def predict(interpreter, image):
     output_details = interpreter.get_output_details()
     interpreter.set_tensor(input_details[0]['index'], image)
     interpreter.invoke()
-    output = interpreter.get_tensor(output_details[0]['index'])
-    prediction = "Real" if output[0][0] > 0.5 else "Fake"
-    confidence = output[0][0]
+    output = interpreter.get_tensor(output_details[0]['index'])  
+    score = float(output[0][0]) 
+    prediction = "Real" if score > 0.5 else "Fake"
+    confidence = score if prediction == "Real" else 1 - score
     return prediction, confidence
