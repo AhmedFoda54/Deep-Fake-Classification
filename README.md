@@ -41,7 +41,7 @@ pip install -r requirements.txt
 1. **Run the Streamlit app:**
 
 ```bash
-streamlit run tflite_model_app.py
+streamlit run app/main.py
 ```
 
 2. **Open your browser** and navigate to the URL provided in the terminal (usually `http://localhost:8501`).
@@ -52,11 +52,14 @@ streamlit run tflite_model_app.py
 
 ```
 deepfake-classifier/
-|-- tflite_model_app.py                      # Main Streamlit application file
-|-- tflite_model.py                      # To convert the .h5/keras model to .tflite model
-|-- deepfake_classifier.tflite  # TensorFlow Lite model file (downloaded automatically)
-|-- requirements.txt            # List of required Python packages
-|-- README.md                   # Project documentation
+  |--app/
+        |-- main.py                      # Main Streamlit application file
+        |-- model_utils.py                      # Helper Functions
+  |--model_convertion/
+        |-- convert_to_tflite.py  # To convert the .h5/keras model to .tflite model
+  |--deepfake_classifier.tflite # TensorFlow Lite model file (downloaded automatically)
+  |-- requirements.txt            # List of required Python packages
+  |-- README.md                   # Project documentation
 ```
 
 ---
